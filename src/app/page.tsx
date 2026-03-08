@@ -4,7 +4,7 @@ import { FeatureFlagConfig, FeatureFlagProvider } from 'feature-flag-sdk-react';
 import FeatureDemo from '@/components/FeatureDemo';
 import { useEffect, useState } from 'react';
 
-const DEFAULT_AUTH = 'server-777e651f05acb6e1a1c5f2d0f52f5658';
+const DEFAULT_AUTH = 'server-e5c9796a84bd71637d0f075778e1c1a1';
 const STORAGE_KEY = 'feature-flag-auth';
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
           React SDK Integration
         </h1>
-        
+
         <div className="w-full max-w-2xl mb-8 p-6 bg-zinc-900/50 rounded-xl border border-zinc-800">
           <label className="block text-sm font-medium text-zinc-400 mb-2">
             Authorization Token

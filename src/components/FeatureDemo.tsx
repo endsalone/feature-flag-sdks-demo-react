@@ -4,7 +4,7 @@ import { useFeatureFlag } from 'feature-flag-sdk-react';
 
 export default function FeatureDemo() {
   const { isFeatureEnabled, getFeature, features, loading, error } = useFeatureFlag();
-  const isNewFeatureEnabled = isFeatureEnabled('nova-interface');
+  const isNewFeatureEnabled = isFeatureEnabled('new-ui-feature');
   const btnColor = getFeature('cores-padroes');
 
   if (loading) {
@@ -40,7 +40,7 @@ export default function FeatureDemo() {
               {isNewFeatureEnabled ? 'Enabled' : 'Disabled'}
             </span>
           </div>
-          
+
           {isNewFeatureEnabled && (
             <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg text-blue-200 text-sm">
               ✨ This content is dynamically revealed because the feature flag is active.
