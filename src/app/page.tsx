@@ -4,7 +4,7 @@ import { FeatureFlagConfig, FeatureFlagProvider } from 'feature-flag-sdk-react';
 import FeatureDemo from '@/components/FeatureDemo';
 import { useEffect, useState } from 'react';
 
-const DEFAULT_AUTH = 'server-e5c9796a84bd71637d0f075778e1c1a1';
+const DEFAULT_AUTH = 'server-6c40898eeb4200aeef1c68692d316bee';
 const STORAGE_KEY = 'feature-flag-auth';
 
 export default function Home() {
